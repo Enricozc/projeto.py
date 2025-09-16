@@ -2,6 +2,29 @@ import streamlit as st
 import requests
 import pandas as pd
 
+st.markdown("""
+    <style>
+        /* Cor de fundo da página */
+    body {
+        background-color: #F0F8FF; /* Azul clarinho */
+    }
+            /* Cor e estilo do título principal */
+    h1 {
+        color: #2E86C1;  /* Azul mais forte */
+        text-align: center;
+    }
+            /* Subtítulos */
+    h2, h3 {
+        color: #117864;  /* Verde escuro */
+    }
+    /* Texto da tabela */
+    .stDataFrame {
+        background-color: #ffffff;
+        color: #1C2833;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 
 st.set_page_config(page_title="Loja de Produtos", page_icon="🛒", layout="wide")
 
